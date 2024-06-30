@@ -5,7 +5,7 @@ import SortOption from './components/SortOption';
 import { getFeedbacks } from './services/fetch';
 
 const App = () => {
-  const [feedbacks, setFeedbacks] = useState(getFeedbacks());
+  const [feedbacks] = useState(getFeedbacks());
   const [filteredFeedbacks, setFilteredFeedbacks] = useState(feedbacks);
 
   const handleSearch = (query) => {
